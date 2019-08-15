@@ -16,9 +16,17 @@ const addNote = (title, body) => {
     }
 }
 
-const saveNotes = notes => {
-    const dataJSON = JSON.stringify(notes)
-    fs.writeFileSync('notes.json', dataJSON)
+
+const removeNote = title => {
+    const notes = loadNotes()
+    const notesToKeep = notes.filter(note => note.title !== title)
+
+    if (notes.length > notesToKeep.length) {
+        console.log(chalk.green.inverse('Note removed'))
+        saveNotes(notesToKeep)
+    } else {
+        console.log(chalk.red.inverse('No note found'))
+    }
 }
 
 const readNote = (title) => {
@@ -43,18 +51,6 @@ const loadNotes = () => {
     }
 }
 
-const removeNote = title => {
-    const notes = loadNotes()
-    const notesToKeep = notes.filter(note => note.title !== title)
-
-    if (notes.length > notesToKeep.length) {
-        console.log(chalk.green.inverse('Note removed'))
-        saveNotes(notesToKeep)
-    } else {
-        console.log(chalk.red.inverse('No note found'))
-    }
-}
-
 const listNotes = () => {
     const notes = loadNotes()
 
@@ -65,9 +61,14 @@ const listNotes = () => {
     })
 }
 
+const saveNotes = notes => {
+    const dataJSON = JSON.stringify(notes)
+    fs.writeFileSync('notes.json', dataJSON)
+}
+
 module.exports = {
-    removeNote: removeNote,
     addNote: addNote,
-    listNotes: listNotes,
-    readNote: readNote
+    removeNote: removeNote,
+    readNote: readNote,
+    listNotes: listNotes
 }
