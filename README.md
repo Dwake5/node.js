@@ -11,20 +11,20 @@ The course is 34.5 hours long, with frequent challenges and guides you through b
 The user can add a note, remove a note, list all notes or read a note.<p>
 
 <table>
-    <thead>
+    <tr>
         <th>Function   </th>
         <th>Terminal command</th>
-    </thead>
-    <tbody>
-        <tr>Add:</tr>
-        <tr>Remove:</tr>
-        <tr>List:</tr>
-        <tr>Read:</tr>
-    </tbody>
-    <tbody>
-        <tr>node app.js add --title="(title of note)" --body="(main text of the note)"</tr>
-        <tr>node app.js remove --title"(title of note)"</tr>
-        <tr>node app.js list</tr>
-        <tr>node app.js read --title="(title of note)"</tr>
-    </tbody>
+    </tr>
+    <tr>
+        <td>Add:</td>
+        <td>Remove:</td>
+        <td>List:</td>
+        <td>Read:</td>
+    </tr>
+    <tr>
+        <td>node app.js add --title="(title of note)" --body="(main text of the note)"</td>
+        <td>node app.js remove --title"(title of note)"</td>
+        <td>node app.js list</td>
+        <td>node app.js read --title="(title of note)"</td>
+    </tr>
 </table>
