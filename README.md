@@ -17,14 +17,18 @@ The user can add a note, remove a note, list all notes or read a note.<p>
     </tr>
     <tr>
         <td>Add:</td>
-        <td>Remove:</td>
-        <td>List:</td>
-        <td>Read:</td>
+        <td>node app.js add --title="(title of note)" --body="(main text of the note)"</td>
     </tr>
     <tr>
-        <td>node app.js add --title="(title of note)" --body="(main text of the note)"</td>
+        <td>Remove:</td>
         <td>node app.js remove --title"(title of note)"</td>
+    </tr>
+    <tr>
+        <td>List:</td>
         <td>node app.js list</td>
+    </tr>
+    <tr>
+        <td>Read:</td>
         <td>node app.js read --title="(title of note)"</td>
     </tr>
 </table>
