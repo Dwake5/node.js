@@ -1,8 +1,8 @@
 <h1> Node.js </h1>
 
-<p>I am currently going through a Udemy course on Node.js.</p>
+<p>I am currently going through a Node.JS course on Udemy, it has a 4.7/5 rating and has been done by over 135,000 people.</p>
 
-<a href="https://www.udemy.com/the-complete-nodejs-developer-course">The course is linked here</a>
+<a href="https://www.udemy.com/the-complete-nodejs-developer-course-2">The course is linked here</a>
 
 <p>Node is a backend language written with JavaScript.</p>
 
